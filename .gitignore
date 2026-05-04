@@ -1,0 +1,34 @@
+## --- Compilación y Salida ---
+# Evita subir los ejecutables y librerías compiladas
+[Bb]in/
+[Oo]bj/
+
+## --- Visual Studio ---
+# Archivos de caché y configuración de usuario
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+## --- VS Code ---
+# Configuración local de VS Code
+.vscode/
+# Excepto si quieres compartir las tareas o el lanzador (opcional)
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+## --- Paquetes NuGet ---
+# Los paquetes se restauran automáticamente, no hace falta subirlos
+*.nupkg
+# Carpeta de paquetes antigua (si no usas PackageReference)
+packages/
+
+## --- Sistema Operativo ---
+# Archivos basura de Windows/Mac
+Thumbs.db
+.DS_Store
+
+## --- Publicación y Logs ---
+*.log
+publish/
