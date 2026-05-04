@@ -1,9 +1,7 @@
 
 public class Persona
 {
-    protected string nombre;
-    protected string documento;
-    protected string correo;
+    protected string nombre, documento, correo;
     private int edad;
     public int Edad
     {
