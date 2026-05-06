@@ -22,6 +22,15 @@ public class Empleado : Persona
     {
         base.MostrarInfo();
         Console.WriteLine("Cargo: " + Cargo);
-        Console.WriteLine("Sueldo: " + sueldo);
+        Console.WriteLine("Sueldo: " + Sueldo);
+    }
+
+    public void CalcularSueldo(string tipo)
+    {
+        Console.WriteLine(this.sueldo * 0.9);
+    }
+    public void CalcularSueldo(double descuento)
+    {
+        Console.WriteLine(this.sueldo * descuento);
     }
 }

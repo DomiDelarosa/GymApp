@@ -3,8 +3,9 @@
     static void Main(string[] args)
     {
         Console.Write("Empleado 1: ");
-        Empleado empleado1 = new Empleado("Juan", 30, "12345678", "juan@example.com", "Entrenador", 1);
+        Empleado empleado1 = new Empleado("Juan", 30, "12345678", "juan@example.com", "Entrenador", 1200);
         empleado1.MostrarInfo();
+        empleado1.CalcularSueldo(0.5);
         
         Console.WriteLine("======================");
 

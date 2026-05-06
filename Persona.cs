@@ -31,6 +31,6 @@ public class Persona
     public virtual void MostrarInfo() 
     {
         Console.WriteLine(nombre);
-        Console.WriteLine("Edad: " + edad);
+        Console.WriteLine("Edad: " + Edad);
     }
 }
