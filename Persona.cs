@@ -30,10 +30,7 @@ public class Persona
 
     public virtual void MostrarInfo() 
     {
-        Console.WriteLine("======================");
-        Console.WriteLine("Nombre: " + this.nombre);
-        Console.WriteLine("Documento: " + this.documento);
-        Console.WriteLine("Correo: " + this.correo);
-        Console.WriteLine("Edad: " + this.edad);
+        Console.WriteLine(nombre);
+        Console.WriteLine("Edad: " + edad);
     }
 }

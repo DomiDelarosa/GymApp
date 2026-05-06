@@ -9,7 +9,7 @@ public class Empleado : Persona
         {
             if (value > 0)
                 sueldo = value;
-            else Console.Write("Invalido");
+            else Console.Write("Error, el salario no puede ser negativo.");
         }
     }
     public Empleado(string nombre, int edad, string documento, string correo, string cargo, double sueldo)
@@ -21,6 +21,7 @@ public class Empleado : Persona
     public override void MostrarInfo()
     {
         base.MostrarInfo();
-        Console.WriteLine(Cargo + "\nSueldo: " + Sueldo);
+        Console.WriteLine("Cargo: " + Cargo);
+        Console.WriteLine("Sueldo: " + sueldo);
     }
 }
