@@ -7,8 +7,8 @@ public class Cliente : Persona
          : base(nombre, documento, correo, edad)
       {
          this.plan = plan;
-         this.fechaIngreso = fecha;
-         this.activo = true; 
+         fechaIngreso = fecha;
+         activo = true; 
       }
       public override void MostrarInfo()
       {

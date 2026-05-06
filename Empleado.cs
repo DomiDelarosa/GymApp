@@ -1,32 +1,26 @@
-public class Empleado : Persona 
+public class Empleado : Persona
 {
+    public string Cargo { get; set; }
     private double sueldo;
-    public string Cargo;
     public double Sueldo
     {
-        get {return sueldo;}
-        set {
-            if(value >= 0)
-            {
+        get { return sueldo; }
+        set
+        {
+            if (value > 0)
                 sueldo = value;
-            } else {
-                Console.WriteLine("Sueldo no puede ser negativo!");
-            }
+            else Console.Write("Invalido");
         }
     }
-
-    public Empleado (
-            string nombre,
-            string documento,
-            string correo,
-            int edad,
-            double sueldo,
-            string cargo 
-        )
-        :base(nombre, documento, correo, edad);
-        {
-            this.sueldo = sueldo;
-            this.Cargo = cargo;
-        }
-
+    public Empleado(string nombre, int edad, string documento, string correo, string cargo, double sueldo)
+       : base(nombre, documento, correo, edad)
+    {
+        Cargo = cargo;
+        Sueldo = sueldo;
+    }
+    public override void MostrarInfo()
+    {
+        base.MostrarInfo();
+        Console.WriteLine(Cargo + "\nSueldo: " + Sueldo);
+    }
 }
