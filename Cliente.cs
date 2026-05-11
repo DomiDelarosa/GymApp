@@ -1,7 +1,7 @@
 public class Cliente : Persona
 {
       public string plan { get; set; }
-      public string fechaIngreso { get; }
+      private string fechaIngreso { get; }
       public bool activo { get; set; }
       public Cliente(string nombre, int edad, string documento, string correo, string plan, string fecha)
          : base(nombre, documento, correo, edad)
