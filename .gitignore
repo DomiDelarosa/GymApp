@@ -1,34 +1,40 @@
 ## --- Compilación y Salida ---
-# Evita subir los ejecutables y librerías compiladas
 [Bb]in/
 [Oo]bj/
 
 ## --- Visual Studio ---
-# Archivos de caché y configuración de usuario
 .vs/
 *.user
+*.rsuser
 *.userosscache
 *.sln.docstates
 
 ## --- VS Code ---
-# Configuración local de VS Code
 .vscode/
-# Excepto si quieres compartir las tareas o el lanzador (opcional)
+
+# Opcional: compartir configuración útil
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 
-## --- Paquetes NuGet ---
-# Los paquetes se restauran automáticamente, no hace falta subirlos
+## --- NuGet ---
 *.nupkg
-# Carpeta de paquetes antigua (si no usas PackageReference)
 packages/
 
+# Lock file (opcional)
+# Si quieres builds reproducibles, NO ignores esto
+# packages.lock.json
+
+## --- Logs ---
+*.log
+
+## --- Publicación ---
+publish/
+
 ## --- Sistema Operativo ---
-# Archivos basura de Windows/Mac
 Thumbs.db
 .DS_Store
 
-## --- Publicación y Logs ---
-*.log
-publish/
+## --- Archivos temporales ---
+*.tmp
+*.temp
